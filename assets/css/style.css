@@ -3,6 +3,11 @@
 body {
     background-color: aquamarine;
   }
+
+  #audio {
+      text-align: center;
+      
+  }
   
   #end-page {
     display: none;
