@@ -2,22 +2,21 @@
 
 body {
     background-color: aquamarine;
-  }
+    background: url("../images/spinning-box.png");
+    
 
-  #audio {
-      text-align: center;
-      
-  }
-  
+}
   #end-page {
     display: none;
+    color: tomato;
   }
-  
+
+    
   #main-logo {
     padding-top: 50px;
     padding-bottom: 20px;
     width: 100% \9;
-    background-color: goldenrod;
+    background-color: tomato;
   }
 
   
@@ -42,6 +41,7 @@ body {
     margin-top: 32px;
     font-size: 20px;
     font-weight: 500;
+    color: gold
   }
   
   footer {
@@ -60,3 +60,15 @@ body {
   #done-button {
     margin-top: 20px;
   }
+
+  p {
+      color: gold;
+  }
+  
+  #questions-box {
+      color: red;
+}
+
+  #hidden {
+  color: tomato;
+}
