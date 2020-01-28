@@ -55,6 +55,7 @@ body {
   
   #timer {
     margin-top: 20px;
+    color: red;
   }
   
   #done-button {
@@ -69,6 +70,6 @@ body {
       color: red;
 }
 
-  #hidden {
-  color: tomato;
+  audio {
+      range: center;
 }

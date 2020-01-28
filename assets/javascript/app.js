@@ -26,7 +26,7 @@ $(document).ready(function(){
     // decrement the timer and update the UI; stop the timer at 0
     countdown: function() {
       gameState.timeRemaining--;
-      $("#timer").text("Time remaining: id=timeremaining" + gameState.timeRemaining);
+      $("#timer").text("Time remaining: " + gameState.timeRemaining);
       if (gameState.timeRemaining === 0) {
         gameState.stopTimer();
         $("#timer").empty();
