@@ -12,7 +12,7 @@ $(document).ready(function(){
   // information about the state of game play
   var gameState = {
   
-    // set the time at 60 seconds, and count down by 1 second
+    // set the timer at 60 seconds, and count down by 1 second
     timeRemaining : 60,
   
     // start the timer, hide the start page, show the questions
@@ -39,7 +39,7 @@ $(document).ready(function(){
       trivia.checkAnswers();
     },
   
-    // hide the quetions and display the end page with results
+    // hide the questions and display the end page with results
     showEndPage: function(numCorrect, numIncorrect, numUnanswered) {
       $("#end-page").show();
       $("#questions-box").empty();
@@ -54,7 +54,7 @@ $(document).ready(function(){
   // functions to handle the building questions page and scoring
   var trivia = {
   
-    // pull questions from the array of questions, loop through them, and append to UI
+    // pull questions from the array of questions, loop through them, and append 
     displayQuestions: function() {
       var divContainer = $("#questions-box");
       var answerGroup = $(".form-check");
@@ -81,7 +81,7 @@ $(document).ready(function(){
       $("#done-button").on("click", gameState.stopTimer);
     },
   
-    // test if the user answers are correct, incorrect, or if there are unanswered questions
+    // check if the user answers are correct, incorrect, or if there are unanswered questions
     checkAnswers: function() {
       var correctAnswer;
       var userAnswer;
@@ -90,7 +90,7 @@ $(document).ready(function(){
       var numUnanswered = 0;
   
       // loop through to compare the text of the label with the user answers
-      // increment score counts appropriately
+      // increment score counts 
       for (var i = 0; i < questionBank.length; i++) {
         correctAnswer = questionBank[i].correct;
         userAnswer = $('input[id=radio'+i+']:checked + label').text();
@@ -106,7 +106,7 @@ $(document).ready(function(){
         }
       }
   
-      // show the end page with the score tally
+      // show the end page with the score results
       gameState.showEndPage(numCorrect, numIncorrect, numUnanswered);
     },
   }
@@ -115,6 +115,7 @@ $(document).ready(function(){
   var questionBank =
   [
     {
+     
       question: "Who was the youngest Heavyweight Champion?",
       answers: ["Tommy Morrison", "Mike Tyson", "Floyd Patterson"],
       correct: "Floyd Patterson"
